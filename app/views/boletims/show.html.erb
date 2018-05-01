@@ -1,0 +1,57 @@
+<h1>Detalhes do Boletim Escolar</h1>
+<p id="notice"><%= notice %></p>
+<h2>
+<p>
+  <strong>Nome:</strong>
+  <%= @boletim.nome %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @boletim.idade %>
+</p>
+
+<p>
+  <strong>Masculino:</strong>
+  <%= @boletim.masculino %>
+</p>
+
+<p>
+  <strong>Feminino:</strong>
+  <%= @boletim.feminino %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @boletim.email %>
+</p>
+
+<p>
+  <strong>Faltas:</strong>
+  <%= @boletim.faltas %>
+</p>
+
+<p>
+  <strong>Turma:</strong>
+  <%= @boletim.turma %>
+</p>
+
+<p>
+  <strong>Turno:</strong>
+  <%= @boletim.turno %>
+</p>
+
+<p>
+  <strong>Aprovado:</strong>
+  <%= @boletim.aprovado %>
+</p>
+
+<p>
+  <strong>Reprovado:</strong>
+  <%= @boletim.reprovado %>
+</p>
+
+<%= link_to 'Editar', edit_boletim_path(@boletim) %> 
+<%= link_to 'Inicio', boletims_path %>
+<%= link_to 'Cadastro', new_boletim_path %>
+</h2>

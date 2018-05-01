@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Aprovados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Masculino</th>
+      <th>Feminino</th>
+      <th>Email</th>
+      <th>Faltas</th>
+      <th>Turma</th>
+      <th>Turno</th>
+      <th>Aprovado</th>
+      <th>Reprovado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aprovado_boletims.each do |boletim| %>
+      <tr>
+        <td><%= boletim.nome %></td>
+        <td><%= boletim.idade %></td>
+        <td><%= boletim.masculino %></td>
+        <td><%= boletim.feminino %></td>
+        <td><%= boletim.email %></td>
+        <td><%= boletim.faltas %></td>
+        <td><%= boletim.turma %></td>
+        <td><%= boletim.turno %></td>
+        <td><%= boletim.aprovado %></td>
+        <td><%= boletim.reprovado %></td>
+        <td><%= link_to 'Detalhes', boletim %></td>
+        <td><%= link_to 'Editar', edit_boletim_path(boletim) %></td>
+        <td><%= link_to 'Apagar', boletim, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<h3>
+<%= link_to 'Cadastro', new_boletim_path %>
+<%= link_to 'Inicio', boletims_path %>
+</h3>

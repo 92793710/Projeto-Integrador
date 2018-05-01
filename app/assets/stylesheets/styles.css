@@ -1,0 +1,53 @@
+body {
+    
+    font-family: 'pacifico', cursive;
+    font-family: 'Anton', sans-serif;
+    color: #2E2EFE;
+    font-weight: 300;
+}    
+
+table {
+    border-bottom: 1px solid #ddd;
+    margin: 50px 50px 20px 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin:20 20 20px 50px;
+}
+h1 {
+    margin: 20px 50px 20px 50px;
+    
+}
+
+
+p {
+    
+    margin: 50px 50px 20px 50px;
+    color: #2E2EFE;
+    
+    
+    }
+
+form {
+    margin: 0px 0px 0 50px;
+    color: #2E2EFE;
+}
+
+h3{
+    margin: 20px 20px 20px 50px;
+    color: #FF0000;
+}
+h2 {
+    margin: 10px 400px 50px 450px;
+    border: 3px solid black;
+    color: #2E2EFE;
+} 
+body  {
+    background-image: url("escolar2.jpg");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat, repeat;
+    background-position: bottom right;  
+    background-position: right top; 
+}
+
